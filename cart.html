@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Studios</title>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif; /* MAIN FONT */
+      background: #fff;
+      color: #000;
+      text-align: center;
+    }
+
+    /* Top navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #000;
+      font-size: 12px;   /* smaller SHOP & CART font */
+      font-weight: 400;
+    }
+
+    .brand {
+      font-size: 19px;   /* bigger brand name */
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    /* Image section */
+    .main-image {
+      margin: 50px auto;
+      max-width: 260px; /* smaller desktop image */
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .main-image img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Text content */
+    .content {
+      max-width: 700px;
+      margin: 20px auto 60px;
+      font-size: 12px;
+      line-height: 1.8;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      margin-top: 15px;
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+      header a {
+        font-size: 11px;
+      }
+      .brand {
+        font-size: 18px;
+      }
+      .main-image {
+        max-width: 220px; /* smaller on tablet */
+      }
+      .content {
+        font-size: 13px;
+        line-height: 1.6;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 20px 15px;
+      }
+      header a {
+        font-size: 10px;
+      }
+      .brand {
+        font-size: 16px;
+      }
+      .main-image {
+        max-width: 200px; /* smallest on mobile */
+      }
+      .content {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#">SHOP</a>
+    <a href="index.html" class="brand">MAISON STUDIOS</a>
+    <a href="#">CART</a>
+  </header>
+
+  <!-- Main Image -->
+ 
+
+  <!-- Content -->
+  <div class="content">
+    <h2>MAISON HOME CREATIVE COLLECTION 2025</h2>
+    <p>
+                 Launching soon...
+    </p>
+    <div class="signature">Maison Home</div>
+  </div>
+</body>
+</html>

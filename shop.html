@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - Maison Studios</title>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #000;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    /* Main container */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    /* Left (images) */
+    .product-images {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .product-images img.main-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .thumbnail-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnail-row img {
+      width: 70px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1px solid #eee;
+      transition: border 0.2s;
+    }
+
+    .thumbnail-row img:hover {
+      border: 1px solid #000;
+    }
+
+    /* Right (details) */
+    .product-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-info h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .price span {
+      display: block;
+      font-size: 12px;
+      color: #444;
+    }
+
+    /* Quantity */
+    .quantity {
+      margin: 20px 0;
+    }
+
+    .quantity label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .quantity-controls {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .quantity-controls button {
+      background: #eee;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .quantity-controls span {
+      padding: 6px 12px;
+      font-size: 14px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    /* Sizes */
+    .sizes {
+      margin: 20px 0;
+    }
+
+    .sizes label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .size-options {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .size-options button {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .size-options button:hover {
+      border-color: #000;
+    }
+
+    /* CTA */
+    .cta {
+      margin: 30px 0;
+    }
+
+    .cta button {
+      width: 100%;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      background: #eee;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #ddd;
+    }
+
+    /* Specification */
+    .specification {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .specification h2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .specification p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-info {
+        text-align: center;
+      }
+      .cta button {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="shop.html">SHOP</a>
+    <a href="index.html" class="brand">MAISON STUDIOS</a>
+    <a href="cart.html">CART</a>
+  </header>
+
+  <!-- Product details -->
+  <div class="product-container">
+    <!-- Images -->
+    <div class="product-images">
+      <img src="8b18c6be0afbf44e9a09232cdfce0eb0.jpg" alt="Product" class="main-img">
+      <div class="thumbnail-row">
+        <img src="8b18c6be0afbf44e9a09232cdfce0eb0.jpg" alt="thumb1">
+        <img src="8b18c6be0afbf44e9a09232cdfce0eb0.jpg" alt="thumb2">
+        <img src="8b18c6be0afbf44e9a09232cdfce0eb0.jpg" alt="thumb3">
+        <img src="8b18c6be0afbf44e9a09232cdfce0eb0.jpg" alt="thumb4">
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="product-info">
+      <h1>SOMETIMES ALL YOU NEED IS $500 MILLION DOLLARS</h1>
+      <div class="price">
+        RS 1899
+        <span>INCLUSIVE ALL TAXES AND SHIPPING</span>
+      </div>
+
+      <div class="quantity">
+        <label>QUANTITY</label>
+        <div class="quantity-controls">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+
+      <div class="sizes">
+        <label>SIZES</label>
+        <div class="size-options">
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+          <button>XXL</button>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button>FREE PRE BOOKING</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specification -->
+  <div class="specification">
+    <h2>SPECIFICATION</h2>
+    <p>
+      Material: 3D textured artwork printed on imitation stone paper, finished with a wooden frame — giving depth, detail, and a timeless finish.  
+      Dimensions (inches): 63" (H) x 17.7" (L)
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
