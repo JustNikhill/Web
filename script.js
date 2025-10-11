@@ -197,3 +197,28 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!submitEmail) console.warn("Submit email button missing");
   });
   
+   // JS lighbox code 
+   // ----------------------------
+// IMAGE LIGHTBOX INTERACTIVITY
+// ----------------------------
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox?.querySelector("img");
+
+document.querySelectorAll(".product-images img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  });
+});
+
+lightbox?.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    lightbox.style.display = "none";
+  }
+});
