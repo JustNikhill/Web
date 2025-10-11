@@ -32,7 +32,6 @@
     }
 
     .brand {
-      font-family: "Georgia", cursive;
       font-size: 19px;
       font-weight: 500;
       letter-spacing: 2px;
@@ -339,6 +338,38 @@
       color: black;
     }
 
+    /* LIGHTBOX (Product Image Zoom) */
+.lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-overlay img:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
     /* Responsive */
     @media (max-width: 768px) {
       .product-container {
@@ -369,7 +400,7 @@
   <!-- Header -->
   <header>
     <a href="shop.html">SHOP</a>
-    <a href="index.html" class="brand">Maison Studios</a>
+    <a href="index.html" class="brand">MAISON STUDIOS</a>
     <a href="cart.html">CART</a>
   </header>
 
@@ -422,11 +453,11 @@
         <div class="popup-box">
           <span class="close-popup">&times;</span>
           <h2>MAISON STUDIOS</h2>
-          <p>FOR FREE PRE-ORDER, WE ARE INVITING YOU TO SIGN-UP</p>
+          <p>WE'LL NOTIFY YOU THE MOMENT THIS PRODUCT IS RELEASED.</p>
           <p class="signature">Maison Home</p>
           <label for="emailInput"></label>
           <input type="email" id="emailInput" placeholder="Enter your email" />
-          <button id="submitEmail">FREE PRE BOOKING</button>
+          <button id="submitEmail">GET NOTIFIED</button>
         </div>
       </div>
 
@@ -442,7 +473,7 @@
       </div>
 
       <div class="cta">
-        <button id="preOrderBtn">FREE PRE BOOKING</button>
+        <button id="preOrderBtn">GET NOTIFIED</button>
       </div>
     </div>
   </div>
@@ -455,7 +486,13 @@
       Dimensions (inches): 63" (H) x 17.7" (L)
     </p>
   </div>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <img src="" alt="Zoomed Product Image">
+  </div>
+  
   <script src="script.js"></script>
+
 
 </body>
 </html>
